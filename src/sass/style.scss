@@ -1,0 +1,49 @@
+
+@import "libs/slick";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+@import "blocks/titles";
+@import "blocks/modal";
+@import "blocks/promo";
+@import "blocks/questions";
+@import "blocks/social";
+@import "blocks/reference";
+@import "blocks/info";
+
+
+@font-face {
+    font-family: "Museo";
+    font-display: swap;
+    src: url(../fonts/font.ttf)
+}
+html, body {
+    height:100%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+    margin:0px;
+    min-width: 320px;
+    width: 100%;
+    }
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "MuseoSansCyrl";
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    @include desktop-md {
+        padding: 30px 20px;
+    }
+}
+

@@ -1,0 +1,79 @@
+.questions {
+
+    &__wrapper {
+
+    }
+
+    &__flex {
+        display: flex;
+        margin-top: 32px;
+        position: relative;
+        @include tablet-l {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        @include tablet-l {
+            font-size: 18px;
+        }
+        @include tablet {
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 1em;
+        }
+        p {
+            font-size: 0.75em;
+            line-height: 140%;
+            color: #949494;
+        }
+    }
+
+    &__elem {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 24px;
+        width: calc(25% - 50px);
+        padding: 16px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        @include tablet-l {
+            width: calc(50% - 44px);
+            flex-direction: column;
+            margin: 6px!important;
+        }
+        @include mobile {
+            width: 100%;
+            flex-direction: row;
+            margin: 6px 0;
+        }
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+        img {
+            align-self: flex-end;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 44px;
+        width: 44px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+        border-radius: 50%;
+        margin-right: 0;
+        @include tablet-l {
+            display: none;
+        }
+    }
+}
+
+
