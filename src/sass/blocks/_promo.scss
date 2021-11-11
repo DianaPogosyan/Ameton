@@ -50,6 +50,7 @@
         @include tablet-l {
             border-radius: 0;
             background: none;
+            padding-top: 27px;
         }
     }
     &__info {
@@ -90,9 +91,13 @@
         } 
         @include tablet {
             width: calc(50% - 50px);
-            margin: 10px!important;
-            font-size: 0.6em;
+            font-size: .7em;
             padding: 12px;
+            margin: 10px!important;
+        }
+        @include mobile {
+            width: calc(50% - 36px);
+            margin: 5px!important;
         }
         svg {
             display: inline-block;

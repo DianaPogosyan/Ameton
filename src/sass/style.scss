@@ -45,5 +45,8 @@ body {
     @include desktop-md {
         padding: 30px 20px;
     }
+    @include tablet-l {
+        padding: 20px 20px;
+    }
 }
 

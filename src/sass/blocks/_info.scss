@@ -52,20 +52,17 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8px;
+    margin-right: 8px;  
+    &-gray {
+      background: #F9F9F9;
+    }  
+    &-green {
+      background: #36BA5F;
+      padding: 15px 36px;
+      svg {
+        display: block;
+        margin-right: 8px;
+      }
+    }
   }
-
-  &__button-green {
-    background: #36BA5F;
-    padding: 15px 36px;
-    
-  }
-
-  &__button-gray {
-    background: #F9F9F9;
-  }
-}
-.container {
-}
-.title {
 }
